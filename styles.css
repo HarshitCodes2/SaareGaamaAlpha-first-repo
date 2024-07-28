@@ -1,3 +1,9 @@
 /* Use class name as per the one decided in index.html */
 /* make sure the classes dont conflict with one other */
-
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+/* footer css */
