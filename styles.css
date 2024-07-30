@@ -1,3 +1,69 @@
 /* Use class name as per the one decided in index.html */
 /* make sure the classes dont conflict with one other */
 
+body{
+    background-image: url(Images/Background-min.png);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+}
+
+.head-section{
+    margin-top: 100px;
+}
+
+.container{
+    max-width: 940px;
+    margin: auto;
+}
+
+.head-h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 9vh;
+    line-height: 100%;
+    color: #ccc;
+    margin: 0px;
+    letter-spacing: 1.5px;
+}
+
+.head-h4{
+    margin: 0px;
+    margin-left: 15vh;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.25vh;
+    line-height: 100%;
+    color: #ccc;
+    
+}
+
+.head-text-body{
+    margin-top: 50px;
+}
+
+.head-para{
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75vh;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1.5px;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.head-h5{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 2.5vh;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0;
+}
+
+
