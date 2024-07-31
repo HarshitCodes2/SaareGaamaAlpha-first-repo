@@ -43,7 +43,103 @@
     
     <section class="body-section">
         <div class="container">
+            <h1 class="heading-jig">Popular Git Commands</h1>
+            <div class="square-container">
+                <div class="square">
+                    <h2 class="heading-h2">PUSH</h2>
+                    <ul class="heading-list">
+                        <li>Upload local changes to the remote repository.</li>
+                        <li>This ensures your updates are available to others.</li>
+                        <li>It is essential for sharing work in collaborative projects.</li>
+                        <li>Use it to synchronize your local work with the remote repository.</li>
+                    </ul>
+                </div>
+                <div class="square">
+                    <h2 class="heading-h2">PULL</h2>
+                    <ul class="heading-list">
+                        <li>Fetch and merge changes from the remote repository.</li>
+                        <li>Keeps your local repository up to date.</li>
+                        <li>This command integrates updates made by your team into your local copy.</li>
+                        <li>It helps to avoid conflicts by synchronizing your changes with others.</li>
+                    </ul>
+                </div>
+                <div class="square">
+                    <h2 class="heading-h2">MERGE</h2>
+                    <ul class="heading-list">
+                        <li>Combine changes from different branches into one.</li>
+                        <li>Useful for integrating features or fixes.</li>
+                        <li>It can create a merge commit if there are conflicts.</li>
+                        <li>Review conflicts carefully to ensure a smooth integration.</li>
+                    </ul>
+                </div>
+                <div class="square">
+                    <h2 class="heading-h2">REBASE</h2>
+                    <ul class="heading-list">
+                        <li>Apply changes from one branch onto another base branch.</li>
+                        <li>Keeps a cleaner project history by avoiding merge commits</li>
+                        <li>It allows for a linear history, making it easier to follow.</li>
+                        <li>Be cautious with rebasing shared branches as it rewrites commit history.</li>
+                    </ul>
+                </div>
+            </div>
             
+            <div class="info">
+                <h1 class="heading-2">About Merge Conflicts</h1>
+                <p class="head-para">
+                    When working with Git, a merge conflict occurs when two branches have changes that are incompatible and Git cannot
+                    automatically merge them. This typically happens when:
+                    
+                    <ul class="head-para">
+                        <li><b>Two branches modify the same line in a file:</b> Git cannot decide which change to keep.</li>
+                        <li><b>One branch deletes a file that another branch has modified:</b> Git cannot determine if the file should be deleted or the changes should be kept.</li>
+                    </ul>
+                </p>
+                <h5 class="head-h5">How to Resolve Merge Conflicts:</h5>
+                <ol class="head-para">
+                    <li><b>Identify the Conflict:</b> Git will mark the conflicting sections in the affected files with conflict markers
+                    (<<<<<<,======,>>>>>>). You’ll see these markers where the conflicts are located.</li>
+                    <br>
+                    <li><b>Edit the Files:</b>Open the conflicted files and decide how to resolve the conflicts. You can choose to keep changes
+                    from one branch, combine changes from both branches, or make other modifications as needed.</li>
+                    <br>
+                    <li><b>Mark as Resolved:</b>After editing the files, remove the conflict markers and save your changes. Use the command git
+                    add <file> to mark the conflict as resolved.</li>
+                        <br>
+                    <li><b>Complete the Merge:</b>Once all conflicts are resolved and changes are added, finalize the merge with git commit.
+                    This commit will include the resolved conflicts.</li>
+                    <br>
+                    <li><b>Test Your Code:</b>Run tests to ensure that the resolved merge didn’t introduce any issues.</li>
+                    <br>
+                </ol>
+                <h5 class="head-h5">Best Practices to Avoid Merge Conflicts:</h5>
+                <ul class="head-para">
+                    <li><b>Communicate with Your Team:</b> Git cannot decide which change to keep.</li>
+                    <br>
+                    <li><b>Pull Frequently:</b> Regularly pull changes from the remote repository to keep your branch up-to-date and reduce the
+                    chances of conflicts.</li>
+                    <br>
+                    <li><b>Use Smaller, Frequent Commits:</b> Break changes into smaller commits to simplify conflict resolution.</li>
+                </ul> 
+            </div>
+            <div class="info">
+                <h1 class="heading-2">Open Source Process</h1>
+                <ol class="head-para">
+                    <li><b>Fork a Repository:</b> Begin by creating a personal copy of the repository you want to contribute to. This allows you to make changes without
+                    affecting the original project.</li>
+                    <br>
+                    <li><b>Clone the Forked Repository:</b> Download your forked repository to your local machine using Git. This lets you work on the code locally.</li>
+                    <br>
+                    <li><b>Make Your Edits:</b> Implement your changes or improvements in your local copy of the forked repository. Ensure that your modifications align
+                    with the project's guidelines.</li>
+                    <br>
+                    <li><b>Push the Code:</b> Upload your changes to the remote forked repository on GitHub (or another hosting service). This makes your updates
+                    available for review.</li>
+                    <br>
+                    <li><b>Ask for Pull Request:</b> Request to merge your changes into the original repository by creating a pull request. Provide a clear description of
+                    your changes and why they are beneficial.</li>
+                    <br>
+                </ol>
+            </div>
         </div>
     </section>
     
@@ -53,7 +149,9 @@
         </div>
     </section>
 
+    <!--jigyasa's code-->
+    
     <!-- Use classes as per section name -->
-     <!-- example for body use --- <body-class-name> -->
+    <!-- example for body use --- <body-class-name> -->
 </body>
 </html>
