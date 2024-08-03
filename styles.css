@@ -1,5 +1,6 @@
 /* Use class name as per the one decided in index.html */
 /* make sure the classes dont conflict with one other */
+
 * {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -22,6 +23,52 @@ body {
 
 .head-section {
   margin-top: 100px;
+=======
+.header{
+    display:inline-block;
+    text-decoration: none;
+    margin-left: 40px;
+    color: #fae8e07c;
+    font-size: 3vh;
+
+}
+#logo{
+   text-decoration: none;
+   font-family: "Playfair Display", serif;
+   font-weight: 900;
+   margin-left: 0px;
+   font-style: italic;
+   font-size: 7vh;
+   color: #fae8e0;
+}
+
+#login{
+    
+    margin-left: 350px;
+    color: #ccc;
+}
+.header:hover{
+    transform: scale(1.5);
+    
+}
+#logo:hover{
+    transform: scale(1);
+}
+body{
+    background-image: url(Images/Background-min.png);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.head-section{
+    margin-top: 100px;
 }
 
 .container {
