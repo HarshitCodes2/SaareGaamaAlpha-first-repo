@@ -1,5 +1,29 @@
 /* Use class name as per the one decided in index.html */
 /* make sure the classes dont conflict with one other */
+
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+/* footer css */
+
+body {
+  background-image: url(Images/Background-min.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-clip: border-box;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.head-section {
+  margin-top: 100px;
+=======
 .header{
     display:inline-block;
     text-decoration: none;
@@ -47,123 +71,210 @@ body{
     margin-top: 100px;
 }
 
-.container{
-    max-width: 940px;
-    margin: auto;
+.container {
+  max-width: 940px;
+  margin: auto;
 }
 
-.head-h1{
-    font-family: "Playfair Display", serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 9vh;
-    line-height: 100%;
-    color: #ccc;
-    margin: 0px;
-    letter-spacing: 1.5px;
+.head-h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 9vh;
+  line-height: 100%;
+  color: #ccc;
+  margin: 0px;
+  letter-spacing: 1.5px;
 }
 
-.head-h4{
-    margin: 0px;
-    margin-left: 15vh;
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 3.25vh;
-    line-height: 100%;
-    color: #ccc;
-    
+.head-h4 {
+  margin: 0px;
+  margin-left: 15vh;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3.25vh;
+  line-height: 100%;
+  color: #ccc;
 }
 
-.head-text-body{
-    margin-top: 50px;
+.head-text-body {
+  margin-top: 50px;
 }
 
-.head-para{
-    font-family: "Poiret One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.75vh;
-    text-align: justify;
-    color: rgba(255, 255, 255, 0.7);
-    letter-spacing: 1.5px;
-    line-height: 130%;
-    margin-bottom: 10px;
+.head-para {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75vh;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1.5px;
+  line-height: 130%;
+  margin-bottom: 10px;
 }
 
-.head-h5{
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    font-size: 2.5vh;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 0;
+.head-h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-size: 2.5vh;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
 }
 
-.heading-jig{
-    margin-top: 50px;
-    color:rgba(255, 255, 255, 0.7) ;
-    font-family: "Playfair Display",serif ;
-    text-align: center;
+.heading-jig {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 .square-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px 20px;
-    justify-content: center;
-    margin:auto;
-    margin-top: 50px;
-    width:fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 20px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  width: fit-content;
 }
 
 .square {
-    width: 300px;
-    height: 280px;
-    background-color:#fae8e0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: #343434;
-    font-size: 24px;
-    border-radius: 10px;
-    box-shadow:0 4px 8px rgba(255, 255, 255, 0.2);
-    transition: transform 0.2s, background-color 0.2s;
-    padding: 10px;
-    box-sizing: border-box;
+  width: 300px;
+  height: 280px;
+  background-color: #fae8e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #343434;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s, background-color 0.2s;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .square:hover {
-    transform: scale(1.1);
-    background-color:#343434;
-    color:white;
-    border-color: white ;
+  transform: scale(1.1);
+  background-color: #343434;
+  color: white;
+  border-color: white;
 }
 
 .heading-h2 {
-    margin: 10px;
-    font-size: 30px;
-    align-self: flex-start;
-    font-family:"Playfair Display",serif ;
+  margin: 10px;
+  font-size: 30px;
+  align-self: flex-start;
+  font-family: "Playfair Display", serif;
 }
 
 .heading-list {
-    margin: 10px 0 0;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: "Poiret One",sans-serif;
-    text-align:left;
-    line-height: 18px;
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Poiret One", sans-serif;
+  text-align: left;
+  line-height: 18px;
 }
 
-.heading-2{
-    margin-top: 50px;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: "Playfair Display", serif;
+.heading-2 {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Playfair Display", serif;
 }
-.info{
-    margin-top: 50px;
-    color: rgba(255, 255, 255, 0.7);
+.info {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* footer css */
 
+.footer-container {
+  display: flex;
+  color: #ccc;
+  max-width: 940px;
+  margin: auto;
+  padding: 20px 0;
+}
+.left-container {
+  width: 80%;
+  height: 100%;
+  color: #ccc;
+  display: flex;
+}
+.left-left {
+  width: 40%;
+}
+.left-right {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-image {
+  width: 225px;
+  background-image: url(Images/Screenshot\ 2024-08-02\ 221826.png);
+  background-size: cover;
+  height: 75px;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+}
+.logo-image:hover {
+  transform: scale(1.5);
+}
+.social_media {
+  display: flex;
+  gap: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.right-container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.right-container a {
+  text-decoration: none;
+  color: #ccc;
+}
+.right-container a:hover {
+  color: #53bb33;
+  transform: scale(1.2);
+}
+.right-container ul {
+  list-style-type: none;
+}
+.right-container ul li {
+  margin-top: 5px;
+}
+
+.sign_up_container {
+  margin-top: 20px;
+}
+.sign_up_container input {
+  background-color: #343434;
+  text-align: center;
+  border-radius: 10px;
+  width: auto;
+  color: white;
+}
+
+.social_media a {
+  text-decoration: none;
+  color: #ccc;
+}
+.social_media a:hover {
+  color: #53bb33;
+  transform: scale(1.2);
+}
+.footer-bottom {
+  color: #ccc;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  padding-top: 5px;
 }
